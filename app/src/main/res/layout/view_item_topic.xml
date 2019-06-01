@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvItemTopic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:paddingTop="0dp"
+        app:cardCornerRadius="@dimen/margin_small">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTopic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:tint="@color/tint_color"
+                app:srcCompat="@drawable/summer" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTopicIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin_medium_3"
+                app:srcCompat="@drawable/ic_tag_faces_black_24dp" />
+
+            <TextView
+                android:id="@+id/tvTopicTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tvTopicDescription"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/ivTopicIcon"
+                android:text="Basics"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvTopicDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingBottom="0dp"
+                android:layout_toEndOf="@id/ivTopicIcon"
+                android:text="Learn mediatation fundamentals"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_regular" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="158dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_medium"
+    android:background="@color/screen_background">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvItemProgram"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_item_program"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/typing" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_add" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvProgramTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_medium"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_regular_2x"
+    />
+
+    <TextView
+        android:id="@+id/tvProgramDuration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_regular_2x"/>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/screen_background">
+        <TextView
+            android:id="@+id/tvSessionNo"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:text="1"
+            android:textSize="@dimen/text_regular_2x"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tvSessionName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:text="1"
+            android:layout_toEndOf="@id/tvSessionNo"
+            android:textSize="@dimen/text_regular_2x"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tvSessionDuration"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:text="30"
+            android:textSize="@dimen/text_regular_2x"
+            android:gravity="center"/>
+    </RelativeLayout>
+</LinearLayout>
